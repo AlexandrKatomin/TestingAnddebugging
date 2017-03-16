@@ -1,0 +1,6 @@
+c:\users\александр\documents\visual studio 2015\Projects\testing_lab_2\testing_lab_2\bin\Debug\testing_lab_2.exe.config
+C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\testing_lab_2\bin\Debug\testing_lab_2.exe
+C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\testing_lab_2\bin\Debug\testing_lab_2.pdb
+C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\testing_lab_2\obj\Debug\testing_lab_2.csprojResolveAssemblyReference.cache
+C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\testing_lab_2\obj\Debug\testing_lab_2.exe
+C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\testing_lab_2\obj\Debug\testing_lab_2.pdb
