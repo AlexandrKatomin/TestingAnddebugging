@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+//using testing_lab_2;
 
-namespace TDD {
+namespace testing_lab_2.TDD {
     [TestClass]
     public class TestOfBinaryTree {
         [TestMethod]

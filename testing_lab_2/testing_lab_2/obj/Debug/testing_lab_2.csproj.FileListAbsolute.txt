@@ -7,3 +7,6 @@ C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\
 C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\testing_lab_2.exe.config
 C:\GitHab\Testing\testing_lab_2\testing_lab_2\obj\Debug\testing_lab_2.exe
 C:\GitHab\Testing\testing_lab_2\testing_lab_2\obj\Debug\testing_lab_2.pdb
+C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\testing_lab_2.exe
+C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\testing_lab_2.pdb
+C:\GitHab\Testing\testing_lab_2\testing_lab_2\obj\Debug\testing_lab_2.csprojResolveAssemblyReference.cache

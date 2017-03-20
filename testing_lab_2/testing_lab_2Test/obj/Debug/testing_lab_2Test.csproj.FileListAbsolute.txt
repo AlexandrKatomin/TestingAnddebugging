@@ -7,3 +7,12 @@ C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\
 C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\testing_lab_2Test\obj\Debug\testing_lab_2Test.csprojResolveAssemblyReference.cache
 C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\testing_lab_2Test\obj\Debug\testing_lab_2Test.dll
 C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\testing_lab_2Test\obj\Debug\testing_lab_2Test.pdb
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\bin\Debug\testing_lab_2Test.dll
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\bin\Debug\testing_lab_2Test.pdb
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\bin\Debug\testing_lab_2.exe
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\bin\Debug\testing_lab_2.pdb
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\obj\Debug\testing_lab_2Test.csprojResolveAssemblyReference.cache
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\obj\Debug\testing_lab_2Test.dll
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\obj\Debug\testing_lab_2Test.pdb

@@ -1,1 +1,10 @@
 C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\TDD\obj\Debug\TDD_binaryTree.csprojResolveAssemblyReference.cache
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\TDD.dll
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\TDD.pdb
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\testing_lab_2.exe
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\testing_lab_2.pdb
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\GitHab\Testing\testing_lab_2\TDD\obj\Debug\TDD_binaryTree.csprojResolveAssemblyReference.cache
+C:\GitHab\Testing\testing_lab_2\TDD\obj\Debug\TDD.dll
+C:\GitHab\Testing\testing_lab_2\TDD\obj\Debug\TDD.pdb
