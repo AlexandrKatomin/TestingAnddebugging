@@ -8,12 +8,19 @@ namespace testing_lab_2.TDD {
         [TestMethod]
         public void CreateTree() {
             BinaryTree tree = new BinaryTree();
+            //Assert.IsInstanceOfType(tree, BinaryTree);  ? ошибка не компилируется
         }
+        [TestMethod]
+        public void CreateTree() {
+            BinaryTree tree = new BinaryTree();
+            //Assert.IsInstanceOfType(tree, BinaryTree);  ? ошибка не компилируется
+        }
+
 
         [TestMethod]
         public void InsertElement() {
             BinaryTree tree = new BinaryTree();
-            tree.Add(5);
+          //  tree.Add(5);
         }
     }
 }
