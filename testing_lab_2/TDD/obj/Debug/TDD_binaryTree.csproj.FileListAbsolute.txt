@@ -1,0 +1,1 @@
+C:\Users\Александр\documents\visual studio 2015\Projects\testing_lab_2\TDD\obj\Debug\TDD_binaryTree.csprojResolveAssemblyReference.cache
