@@ -19,21 +19,9 @@ namespace testing_lab_2 {
             }
             if (data < Data) {
                 Left=createNewChildIfHeIsNull(Left, this);
-                /*
-                if (Left == null) {
-                    Left = new BinaryTree();
-                    Left.Parent = this;
-                }
-                */
                 Left.Add(data);
             }else {
                 Right=createNewChildIfHeIsNull( Right, this);
-                /*
-                if (Right == null) {
-                    Right = new BinaryTree();
-                    Right.Parent = this;
-                }
-                */
                 Right.Add(data);
             }
         }
@@ -45,6 +33,16 @@ namespace testing_lab_2 {
             }
             return child;
 
+        }
+
+        public BinaryTree Find (int data) {
+            if (Data == null) return null;
+            if (Data == data) return this;
+            if (data < Data) {
+                return Find(data);
+            }else {
+                return Find(data);
+            }
         }
     }
 }

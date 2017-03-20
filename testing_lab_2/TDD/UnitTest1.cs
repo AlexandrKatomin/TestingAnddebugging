@@ -38,7 +38,9 @@ namespace testing_lab_2.TDD {
         [TestMethod]
         public void TestFind() {
             BinaryTree tree = new BinaryTree();
-          //  tree.Find(5);
+            tree.Add(5);
+            tree.Add(6);
+            Assert.AreEqual(tree.Right, tree.Find(6));
 
         }
 
