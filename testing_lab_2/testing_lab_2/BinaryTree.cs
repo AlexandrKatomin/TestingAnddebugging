@@ -18,19 +18,32 @@ namespace testing_lab_2 {
                 return;
             }
             if (data < Data) {
+                Left=createNewChildIfHeIsNull(Left, this);
+                /*
                 if (Left == null) {
                     Left = new BinaryTree();
                     Left.Parent = this;
                 }
+                */
                 Left.Add(data);
             }else {
+                Right=createNewChildIfHeIsNull( Right, this);
+                /*
                 if (Right == null) {
                     Right = new BinaryTree();
                     Right.Parent = this;
                 }
+                */
                 Right.Add(data);
             }
-
+        }
+        public BinaryTree createNewChildIfHeIsNull( BinaryTree  child,BinaryTree parent) {
+            if (child == null) {
+                BinaryTree newChild = new BinaryTree();
+                newChild.Parent = parent;
+                return newChild;
+            }
+            return child;
 
         }
     }

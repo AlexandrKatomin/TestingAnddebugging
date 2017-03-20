@@ -17,6 +17,7 @@ namespace testing_lab_2.TDD {
             tree.Add(5);
             Assert.AreEqual(tree.Data, 5);
         }
+        [TestMethod]
         public void InsertTwoElement() {
             BinaryTree tree = new BinaryTree();
             tree.Add(5);
@@ -24,6 +25,7 @@ namespace testing_lab_2.TDD {
             Assert.AreEqual(tree.Data, 5);
             Assert.AreEqual(tree.Right.Data, 8);
         }
+        [TestMethod]
         public void InsertThreeElement() {
             BinaryTree tree = new BinaryTree();
             tree.Add(5);
@@ -31,7 +33,14 @@ namespace testing_lab_2.TDD {
             tree.Add(7);
             Assert.AreEqual(tree.Data, 5);
             Assert.AreEqual(tree.Right.Data, 8);
-            Assert.AreEqual(tree.Right.Left.Data, 8);
+            Assert.AreEqual(tree.Right.Left.Data, 7);
         }
+        [TestMethod]
+        public void TestFind() {
+            BinaryTree tree = new BinaryTree();
+          //  tree.Find(5);
+
+        }
+
     }
 }
