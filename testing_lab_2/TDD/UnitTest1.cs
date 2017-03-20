@@ -9,5 +9,11 @@ namespace testing_lab_2.TDD {
         public void CreateTree() {
             BinaryTree tree = new BinaryTree();
         }
+
+        [TestMethod]
+        public void InsertElement() {
+            BinaryTree tree = new BinaryTree();
+            tree.Add(5);
+        }
     }
 }
