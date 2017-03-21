@@ -16,6 +16,11 @@ namespace testing_lab_2 {
         public int? Key { get; set; }
         public BinaryTree<T> Left { get; set; }
         public BinaryTree<T> Right { get; set; }
+
+        internal BinaryTree<string> Remove(int v) {
+            throw new NotImplementedException();
+        }
+
         public BinaryTree<T> Parent { get; set; }
 
 
@@ -77,9 +82,10 @@ namespace testing_lab_2 {
             }
         }
 
-        public void Remove(int key) {
-            Remove(this,key);
-        }
+      //  public static BinaryTree<T> Remove(BinaryTree<T> tree,int key) {
+        //    return Remove(tree,key);
+           
+        //}
         private void AppropriationParentOfNodeOfNewChild(TypesOfNode? typeNode, BinaryTree<T> node, BinaryTree<T> newChid) {
             if (typeNode == TypesOfNode.Left) {
                 node.Parent.Left = newChid;
@@ -90,11 +96,11 @@ namespace testing_lab_2 {
             newChid.Parent = node.Parent;
         }
 
-        public BinaryTree<T> Minimum(BinaryTree<T> node) {
+        public static BinaryTree<T> Minimum(BinaryTree<T> node) {
             if (node.Left == null) return node;
             return Minimum(node.Left);
         }
-        public BinaryTree<T> Remove(BinaryTree<T> root, int key) {
+        public static  BinaryTree<T> Remove(BinaryTree<T> root, int key) {
             if (root == null) return null;
             if (key < root.Key) {
                 root.Left = Remove(root.Left, key);
@@ -108,17 +114,20 @@ namespace testing_lab_2 {
                 root.Data = min.Data;
                 root.Right = Remove(root.Right, (int)root.Key);
             } else if (root.Left != null) {
-                TypesOfNode? typeNode = FindingTypeOfNode(root);
-                AppropriationParentOfNodeOfNewChild(typeNode, root, root.Left);
+              //  TypesOfNode? typeNode = FindingTypeOfNode(root);
+               // AppropriationParentOfNodeOfNewChild(typeNode, root, root.Left);
                 root = root.Left;
                 //ссылка на перент
             } else {
-                TypesOfNode? typeNode = FindingTypeOfNode(root);
-                AppropriationParentOfNodeOfNewChild(typeNode, root, root.Right);
+              //  TypesOfNode? typeNode = FindingTypeOfNode(root);
+               // AppropriationParentOfNodeOfNewChild(typeNode, root, root.Right);
+              
                 root = root.Right;
                 //ссылка на перент
             }
             return root;
+
+         
         }
 
     }
