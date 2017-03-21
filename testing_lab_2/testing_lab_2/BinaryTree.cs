@@ -5,13 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace testing_lab_2 {
-    public class BinaryTree {
-        public int? Data { get; set; }
-        public BinaryTree Left { get; set; }
-        public BinaryTree Right { get; set; }
-        public BinaryTree Parent { get; set; }
+    public class BinaryTree<T> {
+      //  public int? Data { get; set; }
+        public T Data { get; set; }
+        public int? Key { get; set; }
+        public BinaryTree<T> Left { get; set; }
+        public BinaryTree<T> Right { get; set; }
+        public BinaryTree<T> Parent { get; set; }
 
 
+        /*
         public void Add(int data) {
             if(Data ==null || Data ==data) {
                 Data = data;
@@ -25,24 +28,40 @@ namespace testing_lab_2 {
                 Right.Add(data);
             }
         }
-        public BinaryTree createNewChildIfHeIsNull( BinaryTree  child,BinaryTree parent) {
+        */
+        public void Add(int key,T data) {
+            if (Key == null || Key==key) {
+                Data = data;
+                Key = key;
+                return;
+            }
+            if (key < Key) {
+                Left = createNewChildIfHeIsNull(Left, this);
+                Left.Add(key,data);
+            } else {
+                Right = createNewChildIfHeIsNull(Right, this);
+                Right.Add(key,data);
+            }
+        }
+        public BinaryTree<T> createNewChildIfHeIsNull( BinaryTree<T>  child,BinaryTree<T> parent) {
             if (child == null) {
-                BinaryTree newChild = new BinaryTree();
+                BinaryTree<T> newChild = new BinaryTree<T>();
                 newChild.Parent = parent;
                 return newChild;
             }
             return child;
-
         }
 
-        public BinaryTree Find (int data) {
-            if (Data == null) return null;
-            if (Data == data) return this;
-            if (data < Data) {
-                return Find(data);
+        public BinaryTree<T> Find (int key) {
+            if (Key == null) return null;
+            if (Key == key) return this;
+            if (key < Key) {
+                return Left.Find(key);
             }else {
-                return Find(data);
+                return Right.Find(key);
             }
         }
+
+
     }
 }

@@ -7,41 +7,44 @@ namespace testing_lab_2.TDD {
     public class TestOfBinaryTree {
         [TestMethod]
         public void CreateTree() {
-            BinaryTree tree = new BinaryTree();
+            BinaryTree<string> tree = new BinaryTree<string>();
             //Assert.IsInstanceOfType(tree, BinaryTree);  ? ошибка не компилируется
         }
 
         [TestMethod]
         public void InsertElement() {
-            BinaryTree tree = new BinaryTree();
-            tree.Add(5);
-            Assert.AreEqual(tree.Data, 5);
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5,"Иванов");
+            Assert.AreEqual(tree.Data, "Иванов");
         }
         [TestMethod]
         public void InsertTwoElement() {
-            BinaryTree tree = new BinaryTree();
-            tree.Add(5);
-            tree.Add(8);
-            Assert.AreEqual(tree.Data, 5);
-            Assert.AreEqual(tree.Right.Data, 8);
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5,"Иванов");
+            tree.Add(8,"Сидоров");
+            Assert.AreEqual(tree.Data, "Иванов");
+            Assert.AreEqual(tree.Right.Data,"Сидоров");
         }
         [TestMethod]
         public void InsertThreeElement() {
-            BinaryTree tree = new BinaryTree();
-            tree.Add(5);
-            tree.Add(8);
-            tree.Add(7);
-            Assert.AreEqual(tree.Data, 5);
-            Assert.AreEqual(tree.Right.Data, 8);
-            Assert.AreEqual(tree.Right.Left.Data, 7);
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5, "Иванов");
+            tree.Add(8, "Сидоров");
+            tree.Add(7,"Петров");
+           Assert.AreEqual(tree.Data, "Иванов");
+            Assert.AreEqual(tree.Right.Data, "Сидоров");
+           Assert.AreEqual(tree.Right.Left.Data, "Петров");
         }
-        [TestMethod]
+       [TestMethod]
         public void TestFind() {
-            BinaryTree tree = new BinaryTree();
-            tree.Add(5);
-            tree.Add(6);
-            Assert.AreEqual(tree.Right, tree.Find(6));
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5, "Иванов");
+            tree.Add(8, "Сидоров");
+            tree.Add(7, "Петров");
+             BinaryTree<string> t2 = tree.Find(7);
 
+              Assert.AreEqual(t2.Data, "Петров");
+          
         }
 
     }
