@@ -42,9 +42,18 @@ namespace testing_lab_2.TDD {
             tree.Add(8, "Сидоров");
             tree.Add(7, "Петров");
              BinaryTree<string> t2 = tree.Find(7);
-
               Assert.AreEqual(t2.Data, "Петров");
-          
+        }
+
+        [TestMethod]
+        public void TestRemove() {
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5, "Иванов");
+            //Assert.AreEqual(tree.Right.Data, "Петров");
+            tree.Add(7, "Петров");
+            tree.Remove(7);
+
+           // Assert.AreEqual(tree.Right.Data,null);
         }
 
     }
