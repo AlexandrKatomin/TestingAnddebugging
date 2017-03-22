@@ -10,9 +10,7 @@ namespace testing_lab_2 {
         static void Main(string[] args) {
             BinaryTree<string> tree = new BinaryTree<string>();
             tree.Add(5, "Иванов");
-           // tree.Add(8, "Сидоров");
-          //  BinaryTree<string> t2 = tree.Find(8);
-            tree=BinaryTree<string>.Remove(tree,5);
+            BinaryTree<string> t2 = tree.Find(7);
             int r = 4;
 
 

@@ -24,6 +24,7 @@ namespace testing_lab_2 {
             return array;
         }
         */
+        
         public static List<int> SortByChoice(List<int> array) {
             for (int i = 0; i < array.Count-1; i++) {
                 int iMin = i;

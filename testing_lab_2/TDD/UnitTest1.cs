@@ -8,7 +8,8 @@ namespace testing_lab_2.TDD {
         [TestMethod]
         public void CreateTree() {
             BinaryTree<string> tree = new BinaryTree<string>();
-            //Assert.IsInstanceOfType(tree, BinaryTree);  ? ошибка не компилируется
+            
+            // Assert.IsInstanceOfType(tmp, int);  ? ошибка не компилируется
         }
 
         [TestMethod]
@@ -30,12 +31,20 @@ namespace testing_lab_2.TDD {
             BinaryTree<string> tree = new BinaryTree<string>();
             tree.Add(5, "Иванов");
             tree.Add(8, "Сидоров");
-            tree.Add(7,"Петров");
+            tree.Add(4,"Петров");
            Assert.AreEqual(tree.Data, "Иванов");
             Assert.AreEqual(tree.Right.Data, "Сидоров");
-           Assert.AreEqual(tree.Right.Left.Data, "Петров");
+           Assert.AreEqual(tree.Left.Data, "Петров");
         }
-       [TestMethod]
+        [TestMethod]
+        public void InsertduplacatKey() {
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5, "Иванов");
+            tree.Add(5, "Смит");
+            Assert.AreEqual("Смит",tree.Data);
+         
+        }
+        [TestMethod]
         public void TestFind() {
             BinaryTree<string> tree = new BinaryTree<string>();
             tree.Add(5, "Иванов");
@@ -43,6 +52,13 @@ namespace testing_lab_2.TDD {
             tree.Add(7, "Петров");
              BinaryTree<string> t2 = tree.Find(7);
               Assert.AreEqual("Петров",t2.Data);
+        }
+        [TestMethod]
+        public void TestFindOFUnavailableEl() {
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5, "Иванов");
+            BinaryTree<string> t2 = tree.Find(7);
+            //Assert.AreEqual(null, t2.Data);
         }
 
         [TestMethod]
@@ -59,7 +75,6 @@ namespace testing_lab_2.TDD {
             tree.Add(5, "Иванов");
             tree = BinaryTree<string>.Remove(tree, 5);
             Assert.AreEqual(null,tree);
-
         }
 
     }

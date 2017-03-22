@@ -9,36 +9,15 @@ namespace testing_lab_2 {
         public enum TypesOfNode {
             Left,
             Right 
-        }
-        //  public int? Data { get; set; }
-       
+        }       
+
         public T Data { get; set; }
         public int? Key { get; set; }
         public BinaryTree<T> Left { get; set; }
         public BinaryTree<T> Right { get; set; }
 
-        internal BinaryTree<string> Remove(int v) {
-            throw new NotImplementedException();
-        }
-
         public BinaryTree<T> Parent { get; set; }
 
-
-        /*
-        public void Add(int data) {
-            if(Data ==null || Data ==data) {
-                Data = data;
-                return;
-            }
-            if (data < Data) {
-                Left=createNewChildIfHeIsNull(Left, this);
-                Left.Add(data);
-            }else {
-                Right=createNewChildIfHeIsNull( Right, this);
-                Right.Add(data);
-            }
-        }
-        */
         public void Add(int key, T data) {
             if (Key == null || Key == key) {
                 Data = data;
@@ -65,11 +44,11 @@ namespace testing_lab_2 {
         public BinaryTree<T> Find(int key) {
             if (Key == null) return null;
             if (Key == key) return this;
-            if (key < Key) {
+            if (key < Key && Left != null) {
                 return Left.Find(key);
-            } else {
+            } else if (Right != null) {
                 return Right.Find(key);
-            }
+            } else return null;
         }
 
 

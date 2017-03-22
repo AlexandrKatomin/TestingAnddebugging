@@ -26,6 +26,7 @@ namespace testing_lab_2.Tests {
             List<int> actual = Sort.SortByChoice(array);
             CollectionAssert.AreEqual(expected, actual);
         }
+        [TestMethod]
         public void TestOfOddArray() {
             List<int> array = new List<int>() { 7, 4, 1, 6, 8, 2, 5 };
             List<int> expected = new List<int>() { 1, 2, 4, 5, 6, 7, 8 };
@@ -68,7 +69,7 @@ namespace testing_lab_2.Tests {
         [TestMethod]
         // отсортированный массив
         public void TestofArea_3() {
-            List<int> array = new List<int> { 1, 3, 2 };
+            List<int> array = new List<int> { 1, 2, 3 };
             List<int> expected = new List<int> { 1, 2, 3 };
             List<int> actual = Sort.SortByChoice(array);
             CollectionAssert.AreEqual(expected, actual);
