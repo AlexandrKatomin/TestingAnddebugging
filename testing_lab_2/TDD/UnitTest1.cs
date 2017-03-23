@@ -58,7 +58,7 @@ namespace testing_lab_2.TDD {
             BinaryTree<string> tree = new BinaryTree<string>();
             tree.Add(5, "Иванов");
             BinaryTree<string> t2 = tree.Find(7);
-            //Assert.AreEqual(null, t2.Data);
+            Assert.AreEqual(null, t2);
         }
 
         [TestMethod]
@@ -66,15 +66,55 @@ namespace testing_lab_2.TDD {
             BinaryTree<string> tree = new BinaryTree<string>();
             tree.Add(5, "Иванов");
             tree.Add(7, "Петров");
-            tree=BinaryTree<string>.Remove(tree,7);
+            tree=BinaryTree<string>.Remove(tree, 7);
             Assert.AreEqual(null,tree.Right);
         }
         [TestMethod]
-        public void TestRemoveRoot() {
+        public void TestRemoveNodeWithoutSons() {
             BinaryTree<string> tree = new BinaryTree<string>();
             tree.Add(5, "Иванов");
+            tree.Add(7, "Петров");
+            tree=BinaryTree<string>.Remove(tree, 7);
+            Assert.AreEqual(null, tree.Right);
+        }
+        [TestMethod]
+        public void RemoveUnavaibleEl() {
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5, "Иванов");
+            BinaryTree<string> treeActual = new BinaryTree<string>();
+            treeActual.Add(5, "Иванов");
+            tree= BinaryTree<string>.Remove(tree,6);
+            Assert.AreEqual(tree.Data, treeActual.Data);
+        }
+        [TestMethod]
+        public void RemoveNodeWithRightSon() {
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5, "Иванов");
+            tree.Add(7, "Петров");
+            tree=BinaryTree<string>.Remove(tree, 5);
+            Assert.AreEqual(tree.Data, "Петров");
+            Assert.AreEqual(tree.Right, null);
+        }
+        [TestMethod]
+        public void RemoveNodeWithLeftSon() {
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5, "Иванов");
+            tree.Add(3, "Петров");
+            tree=BinaryTree<string>.Remove(tree, 5);
+            Assert.AreEqual(tree.Left, null);
+            Assert.AreEqual(tree.Data, "Петров");
+        }
+        [TestMethod]
+        public void RemoveNodeWithTwoSon() {
+            BinaryTree<string> tree = new BinaryTree<string>();
+            tree.Add(5, "Иванов");
+            tree.Add(3, "Петров");
+            tree.Add(10, "Смит");
+            tree.Add(7, "Спилберг");
+            tree.Add(11, "Сидоров");
             tree = BinaryTree<string>.Remove(tree, 5);
-            Assert.AreEqual(null,tree);
+            Assert.AreEqual("Спилберг",tree.Data);
+            Assert.AreEqual(7,tree.Key );
         }
 
     }

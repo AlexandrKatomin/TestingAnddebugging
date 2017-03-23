@@ -8,9 +8,10 @@ namespace testing_lab_2 {
     class Program {
       
         static void Main(string[] args) {
-            BinaryTree<string> tree = new BinaryTree<string>();
+             BinaryTree< string > tree = new BinaryTree<string>();
             tree.Add(5, "Иванов");
-            BinaryTree<string> t2 = tree.Find(7);
+            tree.Add(7, "Петров");
+            tree = BinaryTree<string>.Remove(tree, 5);
             int r = 4;
 
 
