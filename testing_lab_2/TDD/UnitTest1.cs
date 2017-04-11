@@ -62,14 +62,6 @@ namespace testing_lab_2.TDD {
         }
 
         [TestMethod]
-        public void TestRemove() {
-            BinaryTree<string> tree = new BinaryTree<string>();
-            tree.Add(5, "Иванов");
-            tree.Add(7, "Петров");
-            tree=BinaryTree<string>.Remove(tree, 7);
-            Assert.AreEqual(null,tree.Right);
-        }
-        [TestMethod]
         public void TestRemoveNodeWithoutSons() {
             BinaryTree<string> tree = new BinaryTree<string>();
             tree.Add(5, "Иванов");

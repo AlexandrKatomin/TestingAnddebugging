@@ -16,3 +16,6 @@ C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\bin\Debug\ru\Microsoft.VisualS
 C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\obj\Debug\testing_lab_2Test.csprojResolveAssemblyReference.cache
 C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\obj\Debug\testing_lab_2Test.dll
 C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\obj\Debug\testing_lab_2Test.pdb
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\bin\Debug\Default.srprofile
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\bin\Debug\testing_lab_2Test.dll.CodeAnalysisLog.xml
+C:\GitHab\Testing\testing_lab_2\testing_lab_2Test\bin\Debug\testing_lab_2Test.dll.lastcodeanalysissucceeded

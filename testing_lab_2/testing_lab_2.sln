@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testing_lab_2Test", "testin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD_binaryTree", "TDD\TDD_binaryTree.csproj", "{7388C10A-515F-4FFB-9A95-71081B13F0C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bdd", "bdd\bdd.csproj", "{0EF94F98-05EE-426F-86E0-9CE8BF20AB8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7388C10A-515F-4FFB-9A95-71081B13F0C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7388C10A-515F-4FFB-9A95-71081B13F0C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7388C10A-515F-4FFB-9A95-71081B13F0C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EF94F98-05EE-426F-86E0-9CE8BF20AB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EF94F98-05EE-426F-86E0-9CE8BF20AB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EF94F98-05EE-426F-86E0-9CE8BF20AB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EF94F98-05EE-426F-86E0-9CE8BF20AB8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

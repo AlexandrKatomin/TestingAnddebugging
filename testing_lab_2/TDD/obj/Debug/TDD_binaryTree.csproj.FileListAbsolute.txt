@@ -8,3 +8,8 @@ C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\ru\Microsoft.VisualStudio.QualityT
 C:\GitHab\Testing\testing_lab_2\TDD\obj\Debug\TDD_binaryTree.csprojResolveAssemblyReference.cache
 C:\GitHab\Testing\testing_lab_2\TDD\obj\Debug\TDD.dll
 C:\GitHab\Testing\testing_lab_2\TDD\obj\Debug\TDD.pdb
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\Default.srprofile
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\TDD.dll.config
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\nunit.framework.dll
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\TechTalk.SpecFlow.dll
+C:\GitHab\Testing\testing_lab_2\TDD\bin\Debug\nunit.framework.xml

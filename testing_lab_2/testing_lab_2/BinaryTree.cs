@@ -6,10 +6,6 @@ using System.Threading.Tasks;
 
 namespace testing_lab_2 {
     public class BinaryTree<T> {
-        public enum TypesOfNode {
-            Left,
-            Right 
-        }       
 
         public T Data { get; set; }
         public int? Key { get; set; }
@@ -48,29 +44,6 @@ namespace testing_lab_2 {
             } else if (Right != null) {
                 return Right.Find(key);
             } else return null;
-        }
-
-        TypesOfNode? FindingTypeOfNode(BinaryTree<T> node) {
-            if (node.Parent == null) return null;
-            if (node.Parent.Left == node) {
-                return TypesOfNode.Left;
-            } else {
-                return TypesOfNode.Right;
-            }
-        }
-
-      //  public static BinaryTree<T> Remove(BinaryTree<T> tree,int key) {
-        //    return Remove(tree,key);
-           
-        //}
-        private void AppropriationParentOfNodeOfNewChild(TypesOfNode? typeNode, BinaryTree<T> node, BinaryTree<T> newChid) {
-            if (typeNode == TypesOfNode.Left) {
-                node.Parent.Left = newChid;
-            }
-            if (typeNode == TypesOfNode.Right) {
-                node.Parent.Right = newChid;
-            }
-            newChid.Parent = node.Parent;
         }
 
         public static BinaryTree<T> Minimum(BinaryTree<T> node) {

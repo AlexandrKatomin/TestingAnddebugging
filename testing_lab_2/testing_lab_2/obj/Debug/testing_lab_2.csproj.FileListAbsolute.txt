@@ -10,3 +10,9 @@ C:\GitHab\Testing\testing_lab_2\testing_lab_2\obj\Debug\testing_lab_2.pdb
 C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\testing_lab_2.exe
 C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\testing_lab_2.pdb
 C:\GitHab\Testing\testing_lab_2\testing_lab_2\obj\Debug\testing_lab_2.csprojResolveAssemblyReference.cache
+C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\Default.srprofile
+C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\SpecRun.SpecFlowPlugin.dll
+C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\TechTalk.SpecFlow.dll
+C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\TechTalk.SpecRun.dll
+C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\testing_lab_2.exe.CodeAnalysisLog.xml
+C:\GitHab\Testing\testing_lab_2\testing_lab_2\bin\Debug\testing_lab_2.exe.lastcodeanalysissucceeded
