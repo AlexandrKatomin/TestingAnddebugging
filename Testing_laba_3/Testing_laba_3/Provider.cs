@@ -12,6 +12,7 @@ namespace Testing_laba_3 {
     // надо реализовать метод GetResponse(), который возвращает  webResponse
     // но нет  конструктора webResponse
     // я не знаю, как создать обькт webResponse
+    //
     public abstract class RequestProvider {
         public abstract string GetResponse(string url);
     }
@@ -33,7 +34,11 @@ namespace Testing_laba_3 {
             return resalt;
         }
     }
-        public class TestrequestProvider : RequestProvider {
+    //если я правильно понял, то в TestrequestProvider 
+    //надо протестировать параметры которые мы передаем в RealRequestProvider
+    // но тест выглядит сомнительно
+    
+    public class TestrequestProvider : RequestProvider {
             public override string GetResponse(string url) {
             string testUrl = "https://api.vk.com/method/users.get" +
 
